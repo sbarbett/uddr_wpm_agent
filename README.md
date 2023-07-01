@@ -20,7 +20,7 @@ These files are evaluated and used by the test script.
 
 A default test script is provided.
 
-* `UDDRAgentScript.js`: This script will retrieve the first feed of _threatFeeds.json_, use the first row of credentials from _credentials.csv_ to iterate and query its list of IoCs. Details are recorded in the log buffer.
+* `UDDRAgentScript.js`: This script will retrieve the first feed of _threatFeeds.json_ and use the first row of credentials from _credentials.csv_ to iterate and query its list of IoCs. Details are recorded in the log buffer.
 * `payload.json`: This is so the setup can create the script in WPM using its REST API.
 
 ## Setup
