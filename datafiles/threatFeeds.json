@@ -1,0 +1,12 @@
+{
+	"feeds": [
+		{
+			"name": "OpenPhish",
+			"url": "https://www.openphish.com/feed.txt"
+		},
+		{
+			"name": "VXVault",
+			"url": "http://vxvault.net/URL_List.php"
+		}
+	]
+}
