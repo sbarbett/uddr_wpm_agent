@@ -20,12 +20,12 @@ These files are evaluated and used by the test script.
 
 A default test script is provided.
 
-* `UDDRAgentScript.js`: This script will retrieve the first feed of threatFeeds.json and use the first row of credentials from credentials.csv to iterate and query its list of IoCs. Details are recorded in the log buffer.
+* `UDDRAgentScript.js`: This script will retrieve the first feed of _threatFeeds.json_, use the first row of credentials from _credentials.csv_ to iterate and query its list of IoCs. Details are recorded in the log buffer.
 * `payload.json`: This is so the setup can create the script in WPM using its REST API.
 
 ## Setup
 
-I've included a shell script that will upload the repository components to WPM using your REST apikey and secret.
+I've included a shell script that will upload the repository components to WPM using your REST apikey and secret. First, edit _credentials.csv.json.example_, add your org name and client ID then save it as _datafiles/credentials.csv_. Once you've updated the credentials, run the following.
 
 ```bash
 ./setup.sh <your WPM API key> <secret>
