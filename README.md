@@ -14,7 +14,7 @@ These files are evaluated and used by the test script.
 * `DOHClient.js`: Contains a short function for building and submitting DoH requests to the resolver. It takes 2 positional args, the IoC and client ID.
 * `IOCParser.js`: A parser for IoCs. It will attempt to extrapolate DNS parts or IPs from URLs and emails, which are most commonly what threat feeds report.
 * `threatFeeds.json`: A JSON object that contains an array of feeds. Each feed has a "name" and "url".
-* `credentials.csv`: A CSV file containing two columns for account names and their associated client IDs. An example file is given.
+* `credentials.csv`: A CSV containing two columns for account names and their associated client IDs. An example file is given.
 
 ### Script(s)
 
@@ -37,7 +37,7 @@ They can also be imported through the UI by navigating to Monitoring -> Scripts.
 
 Click on the _Monitoring_ tab then _Create Monitor_. Couple things to note:
 
-1. The script uses HttpClient to produce HTTP quests, not Selenium, so there is no browser involved. Browserless scripts consume 1 unit per step per transaction (as opposed to 4).
+1. The script uses HttpClient to produce HTTP requests, not Selenium, so there is no browser involved. Browserless scripts consume 1 unit per step per transaction (as opposed to 4).
 2. When selecting an interval, keep in mind that it should be divided by the number of locations selected. A 30 min interval with 3 locations will run every 10 min. It iterates through every location in that span of time.
 3. If you uploaded the default test script using the setup file, it will be named _UltraDDR ThreatFeed Agent_.
 
