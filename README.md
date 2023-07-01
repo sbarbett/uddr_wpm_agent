@@ -39,6 +39,11 @@ Click on the _Monitoring_ tab then _Create Monitor_. Couple things to note:
 
 1. The script uses HttpClient to produce HTTP quests, not Selenium, so there is no browser involved. Browserless scripts consume 1 unit per step per transaction (as opposed to 4).
 2. When selecting an interval, keep in mind that it should be divided by the number of locations selected. A 30 min interval with 3 locations will run every 10 min. It iterates through every location in that span of time.
+3. If you uploaded the default test script using the setup file, it will be named _UltraDDR ThreatFeed Agent_.
+
+## About the EMCAScript Version
+
+WPM has an older implementation of Rhino with an out-of-date version of EMCAScript, hence the use of object prototypes. Classes were introduced in ES6. Keep this in mind if you decide to write your own custom scenarios.
 
 ## Alternatives
 
